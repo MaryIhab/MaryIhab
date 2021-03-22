@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,22 +27,47 @@ namespace NewFacebookTask
 
         //    driver.Navigate().GoToUrl("https://www.facebook.com/");
         //}
-        //IWebDriver driver = new ChromeDriver();
+
 
         [Test]
         public void Registration()
         {
             IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://www.facebook.com/"); // or driver.Url = “<URL>”;
+            //driver.Navigate().GoToUrl("https://www.facebook.com/"); // or driver.Url = “<URL>”;
             
             IWebElement element = driver.FindElement(By.Id("u_0_2_Ee"));
-            element.Click();
+            element.Click(); // SignUp
 
-            driver.FindElement(By.Name("firstName")).SendKeys("Mary");
-            driver.FindElement(By.Name("lastName")).SendKeys("Mary");
+            driver.FindElement(By.Name("firstName")).SendKeys("Mary"); // FirstName
+            driver.FindElement(By.Name("lastName")).SendKeys("Ihab"); // LastName
+            driver.FindElement(By.Name("reg_email__")).SendKeys("testmail.com"); //Email
+            driver.FindElement(By.Name("reg_passwd__")).SendKeys("P@ssw0rd"); // Password
+            new SelectElement(driver.FindElement(By.Name("birthday_day"))).SelectByValue("5"); //Birth Day                                                                                                            // Birthday
+            new SelectElement(driver.FindElement(By.Name("birthday_month"))).SelectByValue("Feb"); //Birth month
+            new SelectElement(driver.FindElement(By.Name("birthday_year"))).SelectByValue("2000"); // Birth year
+            driver.FindElement(By.Id("u_e_4_hm")).Click(); // Gender
+            driver.FindElement(By.Name("websubmit")).Click(); // Submit
+
             driver.Close();
-
         }
+
+
+
+        [Test]
+        public void Login()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://www.facebook.com/"); // or driver.Url = “<URL>”;
+
+            driver.FindElement(By.Name("email")).SendKeys("testmail.com"); //Email
+            driver.FindElement(By.Name("pass")).SendKeys("P@ssw0rd"); // Password
+
+            driver.FindElement(By.Name("login")).Click(); // Login
+
+            driver.Close();
+        }
+
+       
 
         //[TearDown]
         //public void Cleanup()
