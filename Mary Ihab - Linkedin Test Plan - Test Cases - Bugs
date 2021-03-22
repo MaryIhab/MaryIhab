@@ -1,0 +1,404 @@
+# **TEST PLAN**
+
+Table of Contents
+
+[Introduction 3](# __RefHeading___ Toc109387551)
+
+[1.1Objectives 3](# __RefHeading___ Toc109387552)
+
+[1.2Team Members 3](# __RefHeading___ Toc109387553)
+
+[2Scope 3](# __RefHeading___ Toc109387554)
+
+[3Assumptions / Risks 4](# __RefHeading___ Toc109387555)
+
+[3.1Assumptions 4](# __RefHeading___ Toc109387556)
+
+[3.2Risks 4](# __RefHeading___ Toc109387557)
+
+[4Test Approach 4](# __RefHeading___ Toc109387558)
+
+[4.1Test Automation 4](# __RefHeading___ Toc109387559)
+
+[5Test Environment 5](# __RefHeading___ Toc109387560)
+
+[6Milestones / Deliverables 5](# __RefHeading___ Toc109387561)
+
+[6.1Test Schedule 5](# __RefHeading___ Toc109387562)
+
+[6.2Deliverables 5](# __RefHeading___ Toc109387563)
+
+# Test Cases
+
+**Test Cases** 6
+
+# Bugs
+
+**Bugs** , 9
+
+#
+
+
+# 1Introduction
+
+The Test Plan has been created to communicate the test approach to team members. It includes the objectives, scope, schedule, risks and approach. This document will clearly identify what the test deliverables will be and what is deemed in and out of scope.
+
+## 1.1Objectives
+
+**LinkedIn**  is an American [business](https://en.wikipedia.org/wiki/Business) and employment-oriented online service that operates via [websites](https://en.wikipedia.org/wiki/Website) and [mobile apps](https://en.wikipedia.org/wiki/Mobile_apps). The platform is mainly used for [professional networking](https://en.wikipedia.org/wiki/Professional_network), and allows job seekers to post their [CVs](https://en.wikipedia.org/wiki/Curriculum_vitae) and employers to post [jobs](https://en.wikipedia.org/wiki/Job).
+
+This Phase of the project will deliver Linkedin Mobile App with new functionalities and bug fixes. This will allow the app to be more usable and preferable by all types of users.
+
+## 1.2Team Members
+
+| **Resource Name** | **Role** |
+| --- | --- |
+|
+ |
+ |
+|
+ |
+ |
+|
+ |
+ |
+
+# 2Scope
+
+The initial phase will include all &#39;must have&#39; requirements. These and any other requirements that get included must all be tested. At the end of this Phase, a user must be able to:
+
+1. Membership (Register new accounts, manage accounts)
+2. Job seeking (Recruiters post jobs and seekers could apply for the jobs)
+3. Premium Accounts (some extra features to be available, payment methods to be handled)
+4. Push Notifications
+5. Companies and Job Seekers can display their profiles professionally
+
+As the team works with the product they will define the needs for the second phase.
+
+Load testing will not be considered part of this project since the user base is known and not an issue.
+
+# 3Assumptions / Risks
+
+## 3.1Assumptions
+
+This section lists assumptions that are made specific to this project.
+
+## 3.2Risks
+
+The following risks have been identified and the appropriate action identified to mitigate their impact on the project. The impact (or severity) of the risk is based on how the project would be affected if the risk was triggered. The trigger is what milestone or event would cause the risk to become an issue to be dealt with.
+
+| # | Risk | Impact | Trigger | Mitigation Plan |
+| --- | --- | --- | --- | --- |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+
+# 4Test Approach
+
+This section identifies the Software Development approach. And the targeted achievement for each milestone/iteration
+
+Exploratory testing will play a large part of the testing for the already existing features. Tests for planned functionalities will be created and added.
+
+## 4.1Test Automation
+
+Automated unit tests are part of the development process.
+
+# 5 Test Environment
+
+Android v10&amp; iOS 14 operating systems
+
+Over Wifi &amp; data networks
+
+# 6Milestones / Deliverables
+
+## 6.1Test Schedule
+
+The initial test schedule as follows……….
+
+| **Task Name** | **Start** | **Finish** | **Effort** | **Comments** |
+| --- | --- | --- | --- | --- |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+|
+ |
+ |
+ |
+ |
+ |
+
+## 6.2Deliverables
+
+| **Deliverable** | **For** | **Date / Milestone** |
+| --- | --- | --- |
+| Test Plan |
+ |
+ |
+| Traceability Matrix |
+ |
+ |
+| Test Results |
+ |
+ |
+| Test Status report |
+ |
+ |
+
+**Test Cases**
+
+| **Module** | **Test Case** |
+| --- | --- |
+| Registration | Create valid account should be submitted successfully |
+|   | Create invalid account should fail submission |
+|   | Create account with Social Networks |
+|   | Create Account with Social Networks to already existing accounts |
+|   | Captcha should be working fine |
+|   | Design should be as Expected |
+|   | Check Required fields are mandatory for submission |
+|   | Check that optional fields could be empty with submission |
+|   | Check that the data is reflected correctly after submission |
+|   | Check the activation mail/code is sent successfully |
+|   | Anonymous users are not allowed to view what should be displayed for registered users only |
+|   | Check that password is encrypted |
+|   | Create Premium account |
+|   | Switch normal account to Premium account |
+|   | Check Trial Premium account after the trial expires |
+|   |   |
+| Login | Login with valid credentials |
+|   | Login with invalid credentials |
+|   | A link should be displayed for registration in the login page |
+|   |   |
+| Sign out | Check that Signing out ends the session even with the back function |
+|   |   |
+| Forgot Password | Message/email to be sent to enable the user to get access to their account |
+|   | User should successfully access the account providing valid data |
+|   | Error message to be displayed with invalid or inactive accounts |
+|   |   |
+| Change Password | User shouldn&#39;t add the old password |
+|   | User should be able to login with the new password |
+|   | Password and confirm password fields should match |
+|   | Password validations are applied in change password form |
+|   |   |
+| Delete Account | Account should be deleted successfully |
+|   | User shouldn&#39;t have access to their deleted accounts |
+|   | The user could create new account with the same info as the deleted account |
+|   |   |
+| Edit Profile | Edit different sections of the Profile and Check data is saved correctly with good UI |
+|   | Manage account privacy - Open the account with anonymous and different user and check that non shared items are not displayed |
+|   | Give and take endorsements should be working fine |
+|   | save jobs for later should be listed in their list |
+|   | Add or remove different profile sections |
+|   |   |
+| Manage Connections | Add Connections |
+|   | Remove Connections |
+|   | Accept Connection invitations |
+|   | Share profile to another networks |
+|   | Followed page should be displayed in interests section |
+|   | See mutual Connections |
+|   | Check connections degree changes with mutual contacts |
+|   | view others profile according to their privacy |
+|   |   |
+| Messages | Open unread messages |
+|   | Mark read messages to unread |
+|   | send new messages |
+|   | Check messages history |
+|   | Check filters are working as expected |
+|   | delete messages |
+|   | Search messages |
+|   | Archive messages |
+|   | Create group chats |
+|   | Mute conversations |
+|   | Report conversations |
+|   | Add attachments to messages |
+|   | Create video meetings |
+|   | Send voice messages |
+|   | Add reacts to separate messages |
+|   | Forward messages |
+|   | Copy messages |
+|   | Share messages externally |
+|   |   |
+| Submitting vacancy forms | Auto fill from account |
+|   | Submit forms |
+|   | Check form validations |
+|   | Check the submitted form received successfully to the publisher |
+|   | Apply for the job and check that publisher receives the application |
+|   | Track submitted jobs after applying |
+|   |   |
+| Checklists | Performance Checklist with respect to (battery consumption – memory consumption – data consumption) |
+|   | Usability Checklist |
+|   | Security Checks |
+|   | Form Validation Checklist |
+|   | Validation messages and Spelling mistakes |
+|   | Different Languages |
+|   |   |
+| Layouts | Portrait |
+|   | Landscape |
+|   |   |
+| Platform | Android |
+|   | iOS |
+|   |   |
+| Different networks | Wi-Fi/ 3G/ 4G |
+
+**Bugs**
+
+| **title** | **reproduce steps** | **attachments** | **affected devices** | **network** | **severity** | **priority** |
+| --- | --- | --- | --- | --- | --- | --- |
+| Create new group chat displays server error | 1- Download Linked in Mobile App on Android
+ 2- Login
+ 3- Open messages
+ 4- From the 3 dots, select new group chat
+ 5- Start typing names and check the app behavior
+**Actual:**  **the page keeps displaying &quot;Unable to fetch suggestions from server&quot; error message** | ![](RackMultipart20210322-4-kgdpni_html_a9316912b3012c12.png)
+ | Samsung - Android v10 | Wi-Fi - 4G | medium | medium |
+| Capturing story pictures in landscape view adds excess black spaces | 1- Download Linked in Mobile App on Android
+ 2- Login
+ 3- Click to Add new story
+ 4- Capture new image/video with landscape view
+ 5- Check the picture/video after capturing
+**Actual:**  **the picture doesn&#39;t fill the view but it have the portrait look with black area around the image** | ![](RackMultipart20210322-4-kgdpni_html_a7e541bba2168f95.png)
+ | Samsung - Android v10 | Wi-Fi - 4G | high | high |
+| Adding New Contacts UI is not clearly displayed | 1- Download Linked in Mobile App on Android
+ 2- Login
+ 3- Navigate to &quot;My Network&quot; tab
+ 4- click the (+) icon to add new contacts
+ 5- Check the colors of the buttons (Add contact or scan QR code)
+ Actual: the frames are in white on a white page, not clearly visible
+
+ | ![](RackMultipart20210322-4-kgdpni_html_b0335a367cb36197.png)
+ | Samsung - Android v10 | Wi-Fi - 4G | medium | medium |
+| See more function should have a see less option | 1- Download Linked in Mobile App on Android
+ 2- Login
+ 3- Scroll in news feed to find a long post
+ 4- Click to &quot;see more&quot;
+ Check for a &quot;see less&quot; function
+ Actual: no show less function | ![](RackMultipart20210322-4-kgdpni_html_10e89a84bcb48f5d.png)
+
+|   |
+| --- |
+
+
+ | Samsung - Android v10 | Wi-Fi - 4G | low | medium |
+| Add attachment button with sharing stories in not working | 1- Download Linked in Mobile App on Android
+ 2- Login
+ 3- Open to view stories
+ 4- Click to share stories with someone
+ 5- In the share screen try to add attachments
+ Actual: add button is not working
+
+
+
+ | ![](RackMultipart20210322-4-kgdpni_html_3fba945599f1d7fa.png)
+ | Samsung - Android v10 | Wi-Fi - 4G | high | medium |
+| Long alert text in Jobs tab in Companies profile overlaps the add button | 1- Download Linked in Mobile App on Android
+ 2- Login
+ 3- Open evision Industry Software profile
+ 4- Navigate to the Jobs tab
+ 5- Check the alert message and the add button
+ Actual: text and button are overlapping
+
+
+
+ | ![](RackMultipart20210322-4-kgdpni_html_3bd1c57d5c2cfcd3.png)
+ | Samsung - Android v10 | Wi-Fi - 4G | medium | high |
